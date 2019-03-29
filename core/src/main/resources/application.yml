@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: dev
+
+  # Thymeleaf
+  thymeleaf:
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    mode: LEGACYHTML5
+    cache: false
+
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+
+#上传文件大小设置
+  servlet:
+    multipart:
+      ### 最大支持文件大小
+      max-file-size: 200MB
+      ## 最大支持请求大小
+      max-request-size: 200MB
+
+#spring.servlet.multipart.max-file-size=100MB
+## 最大支持请求大小
+#spring.servlet.multipart.max-request-size=100Mb
